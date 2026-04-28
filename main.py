@@ -42,7 +42,7 @@ def stats():
 def search(q: str):
     logger.info(f"Search query: {q}")
     return search_tickets(q)
--
+
 @app.get("/category/{category}")
 def category(category: str):
     logger.info(f"Filter category: {category}")
